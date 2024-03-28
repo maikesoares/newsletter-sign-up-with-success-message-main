@@ -230,7 +230,7 @@ body {
 @media (max-width: 420px) {
   
   .container .content .image {
-    max-height: 29rem;
+    background-size: cover;
   }
 
   .container .content .info .input-radio label {
