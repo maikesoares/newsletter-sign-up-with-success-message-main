@@ -1,0 +1,245 @@
+html {
+  background-color: var(--color-medium-grey);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 4rem;
+  background-color: var(--color-white);
+}
+
+.container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
+  position: relative;
+}
+
+.container .image {
+  width: 40rem;
+  height: 59.3rem;
+  background: url('../images/illustration-sign-up-desktop.svg') no-repeat;
+}
+
+.container .content .info{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-right: 6rem;
+  margin-left: 4rem;
+}
+
+.container .content .info .email {
+  width: 100%;
+}
+
+.container .content .info .email small {
+  color: red;
+}
+
+.container .content .info h1 {
+  font-size: 5.5rem;
+  flex-wrap: wrap;
+  font-weight: 700;
+}
+
+.container .content .info p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1px;
+}
+
+.container .content .info .input-radio label {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+.container .content .info .input-radio ul li{
+  margin-bottom: 1rem;
+}
+
+.container .content .info .input-radio input[type=radio]{
+  content: '';
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  accent-color: var(--color-tomato);
+  text-align: center;
+}
+
+.container .content .info .input-radio input[type=radio]:checked:before {
+  content: url('../images/icon-list.svg');
+}
+
+.container .content .info .email {
+  width: 100%;
+}
+
+.container .content .info .email label{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.container .content .info .email input {
+  width: 100%;
+  height: 5.6rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 0.5px solid var(--color-dark-grey);
+  box-shadow: none;
+}
+
+.container .content .info .email button {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.container .content .info .email button:hover {
+  background-color: var(--color-tomato);
+  border: none;
+  box-shadow: 1px 15px 15px 1px rgba(238, 88, 18, 0.288);
+}
+
+
+.container .secondary-content {
+  background-color: var(--color-white);
+  border-radius: 4rem;
+  margin: 2.5rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.container .secondary-content img {
+  width: 7.2rem;
+}
+
+.container .secondary-content h1 {
+  font-size:  6.2rem;
+  font-weight: 700;
+}
+
+.container .secondary-content p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.container .secondary-content button {
+  width: 100%;
+  height: 5.6rem;
+  font-size: 1.5rem;
+  background-color: var(--color-dark-grey);
+  color: var(--color-white);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.container .secondary-content button:hover {
+  background-color: var(--color-tomato);
+  border: none;
+  box-shadow: 1px 15px 15px 1px rgba(238, 88, 18, 0.288);
+}
+
+.container .display {
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .container {
+    border-radius: 0;
+  }
+
+  .container .content {
+    padding: 0;
+    flex-direction: column-reverse;
+    align-items: normal;
+  }
+
+  .container .content .image {
+    width: 100%;
+    max-height: 39rem;
+    background: url('../images/illustration-sign-up-mobile.svg') no-repeat;
+    background-size: contain;
+  }
+  
+  
+  .container .content .info{
+    padding: 1.5rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .container .content .info h1 {
+    font-size: 5.5rem;
+  }
+
+  .container .content .info .email input {
+    width: 97%;
+  }
+
+  .container .content .info .email button {
+    margin-bottom: 2rem;
+    width: 97%;
+  }
+  .container .secondary-content {
+    margin: 2.5rem;
+    width: 50rem;
+  }
+
+  .container .secondary-content h1 {
+    font-size:  5.2rem;
+    font-weight: 700;
+  }
+  
+  .container .secondary-content p {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  
+  .container .secondary-content button {
+    width: 100%;
+    height: 5.6rem;
+    font-size: 1.5rem;
+    background-color: var(--color-dark-grey);
+    color: var(--color-white);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+
+}
+
+@media (max-width: 420px) {
+  
+  .container .content .image {
+    max-height: 29rem;
+  }
+
+  .container .content .info .input-radio label {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+  }
+
+  .container .secondary-content {
+    width: 30rem;
+  }
+
+}

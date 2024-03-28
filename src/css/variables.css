@@ -1,0 +1,7 @@
+:root {
+  --color-dark-grey: hsl(234, 29%, 20%);
+  --color-medium-grey: hsl(235, 18%, 26%);
+  --color-light-grey: hsl(231, 7%, 60%);
+  --color-tomato:hsl(4, 100%, 67%);
+  --color-white: hsl(0, 0%, 100%);
+}
